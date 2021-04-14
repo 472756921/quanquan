@@ -1,5 +1,7 @@
 {
   "private": true,
+  "name": "quanquanAdmin",
+  "version": "1.0.0",
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
@@ -30,6 +32,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@umijs/test": "^3.4.8",
+    "brts-changelog": "^1.0.5",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
     "lint-staged": "^10.0.7",
@@ -41,41 +44,41 @@
     "yorkie": "^2.0.0"
   },
   "config": {
-        "commitizen": {
-        "path": "cz-conventional-changelog"
-        },
-         "ghooks": {
-            "commit-msg": "commitmsg",
-            "pre-push": "commitmsg"
-        },
-        "validate-commit-msg": {
-            "types": [
-                "feat",
-                "fix",
-                "docs",
-                "style",
-                "refactor",
-                "perf",
-                "test",
-                "build",
-                "ci",
-                "chore",
-                "revert"
-            ],
-            "scope": {
-                "required": true,
-                "allowed": [
-                    "*"
-                ],
-                "validate": false,
-                "multiple": false
-            },
-            "warnOnFail": false,
-            "maxSubjectLength": 100,
-            "subjectPattern": ".+",
-            "subjectPatternErrorMsg": "subject does not match subject pattern!",
-            "helpMessage": "",
-            "autoFix": false
-        }
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "commitmsg",
+      "pre-push": "commitmsg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "build",
+        "ci",
+        "chore",
+        "revert"
+      ],
+      "scope": {
+        "required": true,
+        "allowed": [
+          "*"
+        ],
+        "validate": false,
+        "multiple": false
+      },
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPattern": ".+",
+      "subjectPatternErrorMsg": "subject does not match subject pattern!",
+      "helpMessage": "",
+      "autoFix": false
     }
+  }
 }
