@@ -6,6 +6,7 @@
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
+    "commit": "git add . && git cz",
     "test:coverage": "umi-test --coverage"
   },
   "gitHooks": {
@@ -29,11 +30,52 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@umijs/test": "^3.4.8",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.0",
     "react": "17.x",
     "react-dom": "17.x",
     "typescript": "^4.1.2",
+    "validate-commit-msg": "^2.14.0",
     "yorkie": "^2.0.0"
-  }
+  },
+  "config": {
+        "commitizen": {
+        "path": "cz-conventional-changelog"
+        },
+         "ghooks": {
+            "commit-msg": "commitmsg",
+            "pre-push": "commitmsg"
+        },
+        "validate-commit-msg": {
+            "types": [
+                "feat",
+                "fix",
+                "docs",
+                "style",
+                "refactor",
+                "perf",
+                "test",
+                "build",
+                "ci",
+                "chore",
+                "revert"
+            ],
+            "scope": {
+                "required": true,
+                "allowed": [
+                    "*"
+                ],
+                "validate": false,
+                "multiple": false
+            },
+            "warnOnFail": false,
+            "maxSubjectLength": 100,
+            "subjectPattern": ".+",
+            "subjectPatternErrorMsg": "subject does not match subject pattern!",
+            "helpMessage": "",
+            "autoFix": false
+        }
+    }
 }
