@@ -1,0 +1,56 @@
+[
+  {
+    "name": "首页",
+    "path": "/",
+    "icon": "HomeOutlined",
+    "children": "",
+    "isShow": "",
+    "sort": "",
+    "key": "1"
+  },
+  {
+    "name": "用户管理",
+    "path": "/user",
+    "icon": "UserOutlined",
+    "children": "",
+    "isShow": "",
+    "sort": "",
+    "key": "2"
+  },
+  {
+    "name": "商品管理",
+    "path": "/goods",
+    "icon": "BarcodeOutlined",
+    "children": "",
+    "isShow": "",
+    "sort": "",
+    "key": "3"
+  },
+  {
+    "name": "广告管理",
+    "path": "/ad",
+    "icon": "FormatPainterOutlined",
+    "children": "",
+    "isShow": "",
+    "sort": "",
+    "key": "4"
+  },
+  {
+    "name": "流量管理",
+    "path": "/flow",
+    "icon": "NodeIndexOutlined",
+    "children": "",
+    "isShow": "",
+    "sort": "",
+    "key": "5"
+  },
+  {
+    "name": "日志管理",
+    "path": "/log",
+    "icon": "SnippetsOutlined",
+    "children": "",
+    "isShow": "",
+    "sort": "",
+    "key": "6"
+  }
+]

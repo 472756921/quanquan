@@ -1,84 +1,85 @@
 {
-  "private": true,
-  "name": "quanquanAdmin",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "umi dev",
-    "build": "umi build",
-    "postinstall": "umi generate tmp",
-    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "test": "umi-test",
-    "commit": "git add . && git cz",
-    "test:coverage": "umi-test --coverage"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
-      "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write"
-    ]
-  },
-  "dependencies": {
-    "@ant-design/pro-layout": "^6.5.0",
-    "@umijs/preset-react": "1.x",
-    "antd": "^4.15.1",
-    "umi": "^3.4.8"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@umijs/test": "^3.4.8",
-    "brts-changelog": "^1.0.5",
-    "commitizen": "^4.2.3",
-    "cz-conventional-changelog": "^3.3.0",
-    "lint-staged": "^10.0.7",
-    "prettier": "^2.2.0",
-    "react": "17.x",
-    "react-dom": "17.x",
-    "typescript": "^4.1.2",
-    "validate-commit-msg": "^2.14.0",
-    "yorkie": "^2.0.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
+    "private": true,
+    "name": "quanquanAdmin",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "umi dev",
+        "build": "umi build",
+        "postinstall": "umi generate tmp",
+        "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+        "test": "umi-test",
+        "commit": "git add . && git cz",
+        "test:coverage": "umi-test --coverage"
     },
-    "ghooks": {
-      "commit-msg": "commitmsg",
-      "pre-push": "commitmsg"
+    "gitHooks": {
+        "pre-commit": "lint-staged"
     },
-    "validate-commit-msg": {
-      "types": [
-        "feat",
-        "fix",
-        "docs",
-        "style",
-        "refactor",
-        "perf",
-        "test",
-        "build",
-        "ci",
-        "chore",
-        "revert"
-      ],
-      "scope": {
-        "required": true,
-        "allowed": [
-          "*"
+    "lint-staged": {
+        "*.{js,jsx,less,md,json}": [
+            "prettier --write"
         ],
-        "validate": false,
-        "multiple": false
-      },
-      "warnOnFail": false,
-      "maxSubjectLength": 100,
-      "subjectPattern": ".+",
-      "subjectPatternErrorMsg": "subject does not match subject pattern!",
-      "helpMessage": "",
-      "autoFix": false
-    }
-  }
+        "*.ts?(x)": [
+            "prettier --parser=typescript --write"
+        ]
+    },
+    "dependencies": {
+        "@ant-design/pro-layout": "^6.5.0",
+        "@umijs/preset-react": "1.x",
+        "antd": "^4.15.1",
+        "umi": "^3.4.8"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "@umijs/test": "^3.4.8",
+        "brts-changelog": "^1.0.5",
+        "commitizen": "^4.2.3",
+        "cz-conventional-changelog": "^3.3.0",
+        "lint-staged": "^10.0.7",
+        "prettier": "^2.2.0",
+        "react": "17.x",
+        "react-dom": "17.x",
+        "typescript": "^4.1.2",
+        "validate-commit-msg": "^2.14.0",
+        "yorkie": "^2.0.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        },
+        "ghooks": {
+            "commit-msg": "commitmsg",
+            "pre-push": "commitmsg"
+        },
+        "validate-commit-msg": {
+            "types": [
+                "feat",
+                "fix",
+                "docs",
+                "style",
+                "refactor",
+                "perf",
+                "test",
+                "build",
+                "ci",
+                "chore",
+                "revert"
+            ],
+            "scope": {
+                "required": true,
+                "allowed": [
+                    "*"
+                ],
+                "validate": false,
+                "multiple": false
+            },
+            "warnOnFail": false,
+            "maxSubjectLength": 100,
+            "subjectPattern": ".+",
+            "subjectPatternErrorMsg": "subject does not match subject pattern!",
+            "helpMessage": "",
+            "autoFix": false
+        }
+    },
+    "repository": "https://github.com/472756921/quanquan"
 }

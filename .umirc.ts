@@ -5,4 +5,7 @@ export default defineConfig({
     type: 'none',
   },
   fastRefresh: {},
+  dva: {
+    hmr: true,
+  },
 });
